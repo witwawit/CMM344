@@ -1,43 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- use all pages -->
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- some css -->
+    <link rel="stylesheet" href="cardCourse.css" />
 
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous">
-</head>
+      crossorigin="anonymous"
+    />
+  </head>
 
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"
-></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 
-<body>
-    <div class="container">
-        <h1 class="p-5">Courses</h1>
-        <div class="row">
-            <div class="course-list col-4">
-                <div class="d-flex flex-column text-center bg-warning p-3">
-                    <h2>หน่วยที่ 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, ipsa.</p>
-                </div>
-                <div class="course-go p-3 bg-dark text-center">
-                    <a class="btn btn-primary" href="chap1.html">ตกลง</a>
-                </div>
-            </div>
-        </div>
+  <!-- script load -->
+  <script>
+    $(window).on("load", function () {
+      $(".loader").fadeOut(1000);
+      $(".content").fadeIn(1000);
+    });
+  </script>
+  <!-- end script load -->
+
+  <body>
+    <div class="loader">
+      <div></div>
     </div>
 
-</body>
+    <div class="container">
+      <h1 class="pt-5 pb-5">Courses</h1>
+      <div class="row">
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="chap1.html" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 4</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 5</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 6</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 7</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
+        >
+          <div class="card" style="width: 100%">
+            <img src="img/1.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">หน่วยที่ 8</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary align-self-end"
+                >เข้าสู่บทเรียน</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="container-fluid d-flex justify-content-center p-4">
+      <p class="foottext mb-0">
+        Created by School Dev | 2022 all rights reserved
+      </p>
+    </footer>
+  </body>
 </html>
