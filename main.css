@@ -52,3 +52,13 @@ h3 {
 p {
   font-weight: 300;
 }
+
+/* foottext */
+footer{
+  background: #f8d90f;
+}
+@media (max-width: 768px) {
+  .foottext {
+    font-size: 12px;
+  }
+}

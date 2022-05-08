@@ -25,6 +25,7 @@
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 0;
 }
 .card-body .btn{
     background: #fe7a15;
