@@ -8,7 +8,7 @@
 
     <!-- use all pages -->
     <link rel="stylesheet" href="main.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- some css -->
     <link rel="stylesheet" href="cardCourse.css" />
 
@@ -27,7 +27,19 @@
     crossorigin="anonymous"
   ></script>
 
+  <!-- script load -->
+  <script>
+    $(window).on("load", function () {
+      $(".loader").fadeOut(1000);
+      $(".content").fadeIn(1000);
+    });
+  </script>
+  <!-- end script load -->
   <body>
+    <div class="loader">
+      <div></div>
+    </div>
+    
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light p-3">
       <div class="container-fluid navv">
@@ -52,14 +64,14 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+                >หน้าแรก</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="course.html">Courses</a>
+              <a class="nav-link" href="course.html">คอร์สเรียน</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="test.html">Practice</a>
+              <a class="nav-link" href="test.html">ทดสอบ</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a
@@ -85,9 +97,9 @@
       </div>
     </nav>
     <!-- end navbar -->
-    
+
     <div class="container">
-      <h1 class="pt-5 pb-5">Courses</h1>
+      <h1 class="pt-5 pb-5">หลักสูตรของเรา</h1>
       <div class="row">
         <div
           class="course-list col-lg-4 col-md-6 col-sm-12 mb-lg-5 mb-md-3 mb-sm-3 mb-4"
@@ -97,8 +109,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 1</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                ทำความรู้จักเว็บไซต์เบื้องต้น ความหมาย ประเภทของเว็บไซต์ต่างๆ
+                มีจุดประสงค์ที่แตกต่างกันอย่างไร
+                รวมถึงศัพท์เฉพาะของการทำเว็บไซต์
               </p>
               <a href="chap1.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -115,8 +128,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 2</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                หลักการออกแบบเว็บไซต์
+                สิ่งที่จำเป็นต่อการออกแบบเพื่อเป็นประโยชน์ต่อผู้ใช้งาน
+                เว็บไซต์ต้องมีองค์ประกอบอย่างไรบ้างจึงจะสามารถดึงดูดให้มีผู้ชมเข้ามาชมได้
               </p>
               <a href="chap2.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -133,8 +147,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 3</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                องค์ประกอบของการออกแบบเว็บไซต์
+                เว็บที่ดีต้องมีองค์ประกอบอะไรบ้างจึงจะเรียกว่าเป็นเว็บไซต์ที่สมบูรณ์
+                มีความเป็นสากล และไม่ได้ขัดต่อความสนใจของกลุ่มผู้ชม
               </p>
               <a href="chap3.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -151,8 +166,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 4</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                ทำความรู้จักกับภาษา HTML และ CSS ทราบถึงข้อดีข้อเสีย
+                ประโยชน์ต่างๆ ว่าทำไมเราถึงต้องใช้ภาษาเหล่านี้ในการสร้างเว็บไซต์
+                เพื่อเป็นเกริ่นนำในการเรียนภาคปฏิบัติต่อไป
               </p>
               <a href="chap4.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -169,8 +185,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 5</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                ทำความรู้จักกับโปรแกรม VSCode
+                ที่ใช้ในการเขียนเว็บไซต์และการเขียนไฟล์นามสกุล .html .css
+                เพื่อนำมาใช้ร่วมกัน รวมถึงแนะนำคีย์บัดในการทำงานอย่างสะดวก
               </p>
               <a href="chap5.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -187,8 +204,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 6</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                เริ่มต้นการเขียนภาษา HTML
+                ภาษาโครงสร้างหลักในการออกแบบและพัฒนาเว็บไซต์
+                ที่ผู้พัฒนาจะต้องออกแบบเพื่อให้เป็นไปตามจุดประสงค์ของการออกแบบเว็บไซต์
               </p>
               <a href="chap6.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -205,8 +223,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 7</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                เริ่มต้นการเขียนภาษา CSS
+                ภาษาที่ใช้ในการตกแต่งหน้าเว็บไซต์ซึ่งทำงานร่วมกับภาษา HTML
+                เพื่อทำให้เว็บไซต์มีการตอบสนองที่น่าสนใจมากยิ่งขึ้น
               </p>
               <a href="chap7.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -223,8 +242,9 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">หน่วยที่ 8</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                การขึ้น Web Hosting
+                นำโปรแกรมที่เราเขียนนั้นขึ้นสู่เว็บเบราเซอร์จริง
+                เพื่อให้ผู้คนสามารถเห็นเว็บไซต์ของเราได้บนอินเตอร์เน็ต
               </p>
               <a href="chap8.html" class="btn btn-primary align-self-end"
                 >เข้าสู่บทเรียน</a
@@ -237,12 +257,13 @@
 
     <div class="container totest text-center p-5 mb-5">
       <p class="p-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-        officia aperiam culpa at, iste nulla sunt impedit doloribus mollitia
-        sit. Animi quia cumque modi nesciunt laboriosam voluptatem ullam numquam
-        inventore, voluptatibus totam sed ab facere eius iste velit distinctio
-        explicabo dolor reprehenderit, maxime, saepe corrupti? Minima assumenda
-        expedita incidunt non.
+        หากเรียนจบหลักสูตรแล้ว
+        ผู้เรียนสามารถทดสอบความรู้ของตนเองด้วยการทำแบบทดสองจำนวน 40 ข้อ
+        เพื่อประเมินความรู้ตนเองหลังเรียน
+        และจะมีการสอบภาคปฎิบัติที่จะให้ผู้เรียนได้เขียนเว็บไซต์จริงๆ และอัพโหลดขึ้น Web Hosting
+        โดยเมื่อทำการเขียนเว็บไซต์เสร็จ จะมีช่องให้แนบลิ้งผ่าน Google Form
+        ของแบบทดสอบเพื่อให้ผู้เรียน นำ URL มาแนบไว้
+        หลังจากนั้นทีมงานจะตรวจสอบและให้คำแนะนำกลับผ่านทางอีเมลล์ของผู้เรียน
       </p>
       <a href="test.html" class="btn btn-sec">แบบทดสอบ</a>
     </div>
