@@ -28,10 +28,83 @@
   ></script>
 
   <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light p-3">
+      <div class="container-fluid navv">
+        <!-- <a class="navbar-brand" href="index.html">NAVBAR</a> -->
+
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="course.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test.html">Practice</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="chap1.html">Chapter1</a></li>
+  
+                </ul>
+              </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
     <div class="container-fluid">
       <div class="container pt-5 pb-5">
+        <div class="row">
+          <a
+            href="chap2.html"
+            class="choose col-3 col-lg-2 d-flex align-items-center align-self-center justify-content-center"
+          >
+            บทก่อนหน้า
+          </a>
+          <div class="col-6 col-lg-8"></div>
+          <a
+            href="chap4.html"
+            class="choose col-3 col-lg-2 d-flex align-items-center align-self-center justify-content-center"
+          >
+            บทต่อไป
+          </a>
+        </div>
         <h1 class="pb-5 text-center">
-          หน่วยที่ 3 : แนะนำโปรแกรม VSCode และทำความรู้จักกับไฟล์ .html .css
+          หน่วยที่ 3
         </h1>
         <h5>บทที่ 3.1 องค์ประกอบของการออกแบบเว็บไซต์</h5>
         <p>
@@ -50,12 +123,11 @@
         </div>
       </div>
     </div>
-    
+
     <footer class="container-fluid d-flex justify-content-center p-4">
-        <p class="foottext mb-0">
-          Created by School Dev | 2022 all rights reserved
-        </p>
-      </footer>
-      
+      <p class="foottext mb-0">
+        Created by School Dev | 2022 all rights reserved
+      </p>
+    </footer>
   </body>
 </html>

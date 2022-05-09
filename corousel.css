@@ -37,6 +37,15 @@
 .topic{
     color: white;
 }
+.allcourse{
+  font-size: 1.25rem;
+  text-decoration: none;
+  
+}
+.allcourse:hover{
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .card img {
     height: 11em;
