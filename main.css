@@ -104,7 +104,10 @@ footer{
     font-size: 11px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .navbar-brand{
+    width: 40%;
+  }
   .proi {
     font-size: 12px;
   }
