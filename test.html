@@ -8,7 +8,7 @@
     <!-- use all pages -->
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="test.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- bootstrap -->
     <link
@@ -25,22 +25,61 @@
     crossorigin="anonymous"
   ></script>
 
+    <!-- script load -->
+    <script>
+      $(window).on("load", function () {
+        $(".loader").fadeOut(1000);
+        $(".content").fadeIn(1000);
+      });
+    </script>
+    <!-- end script load -->
+
   <body>
+    <div class="loader">
+      <div></div>
+    </div>
+    
     <div class="container">
       <h1 class="pt-5 pb-5">แบบทดสอบ (Test)</h1>
     </div>
 
-    <div class="container-fluid">
-        <div class="container d-flex justify-content-center p-5">
+    <div class="container-fluid testpart">
+      <div class="container d-flex justify-content-center p-5">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          nostrum culpa? Eos odio qui porro, deleniti expedita exercitationem
+          vitae quis rem rerum harum enim molestias tempora optio dolore! Dolor
+          itaque laboriosam repellat unde quisquam at recusandae voluptate
+          similique error voluptatem ipsam dignissimos nihil vero, nostrum
+          mollitia id maxime inventore dolores!
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid testpart mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="imgbox col-lg-6 col-sm-12">
+            <img src="img/test.jpg" alt="" />
+          </div>
+          <div
+            class="linkbox col-lg-6 col-sm-12 text-center align-self-center p-5"
+          >
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-                nostrum culpa? Eos odio qui porro, deleniti expedita exercitationem
-                vitae quis rem rerum harum enim molestias tempora optio dolore! Dolor
-                itaque laboriosam repellat unde quisquam at recusandae voluptate
-                similique error voluptatem ipsam dignissimos nihil vero, nostrum
-                mollitia id maxime inventore dolores!
-              </p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              excepturi adipisci ipsa provident recusandae ea quasi? Non eveniet
+              cum placeat, rerum cumque, nobis veritatis quo, voluptatibus sint
+              officiis pariatur! Architecto?
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScwh9rm3pPf0ZJGSLRI1NiaIYtz4iDPtJZaPQjA0wkUPc5qGw/viewform"
+              target="_blank"
+              class="btn btn-sec"
+              >เริ่มทดสอบ</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
     <footer class="container-fluid d-flex justify-content-center p-4">
@@ -48,6 +87,5 @@
         Created by School Dev | 2022 all rights reserved
       </p>
     </footer>
-    
   </body>
 </html>
