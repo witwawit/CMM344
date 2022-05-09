@@ -8,6 +8,7 @@
   background-color: #0191b4;
   position: absolute;
   z-index: 1;
+  position: fixed;
 }
 .loader > div {
   height: 100px;
