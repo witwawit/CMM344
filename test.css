@@ -10,9 +10,6 @@ img{
     object-fit: cover;
 }
 @media (max-width:500px){
-    .btn-sec{
-        font-size: 1rem !important;
-    }
     .btn-primary{
         font-size: .7rem !important;
     }

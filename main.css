@@ -93,6 +93,9 @@ p {
   background: #0191b4;
   color: white;
 }
+.totest{
+  background: rgb(238, 238, 238);
+}
 
 /* foottext */
 footer{
@@ -113,5 +116,8 @@ footer{
   }
   .proi2{
     font-size: 15px;
+  }
+  .btn-sec{
+    font-size: 1rem !important;
   }
 }
